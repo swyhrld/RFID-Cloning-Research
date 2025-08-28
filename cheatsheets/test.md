@@ -17,10 +17,10 @@ hf iclass info
 
 ### 🔑 Elite vs Non-Elite Keys
 - **Elite key output example**:  
-  ![Elite iCLASS](eliteiclass.png)
+  ![Elite iCLASS](./images/eliteiclass.png)
 
 - **Non-elite key output example**:  
-  ![Non-Elite iCLASS](noneliteiclass.png)
+  ![Non-Elite iCLASS](./images/noneliteiclass.png)
 
 ---
 
