@@ -1,9 +1,8 @@
-# Proxmark3 Cheatsheet
-*(Iceman fork)*
+# HID iClass Cheatsheet
+*Proxmark 3 Iceman fork*
 
 ---
 
-## 🔹 HID — iCLASS
 
 ### 🔍 Check Card Info
 ```bash
@@ -53,11 +52,7 @@ hf iclass chk -f iclass_default_keys.dic
 hf iclass chk -f iclass_elite_keys.dic --elite
 ```
 
----
-
-### 🔑 Dump With Known Keys
 Once you have the right keys:
 ```bash
-hf iclass dump -k <insert keys>
+hf iclass dump -k <insert keys> #include --elite if elite keyed
 ```
-(use `-k` instead of `--ki 0`)
