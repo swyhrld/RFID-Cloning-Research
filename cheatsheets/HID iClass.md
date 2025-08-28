@@ -69,7 +69,9 @@ In most cases, you only need to clone blocks 6 to 9 for the clone to work.
 If copying from elite cards to standard cards, upgrade standard card to elite by writing new key to block 3:
 ```bash
 hf iclass calcnewkey --oki X --nki Y --elite #X = key of destination fob, Y = Key from target fob
-hf iclass wrbl -b 3 -d <XOR key> --ki X #XOR Key from calcnewkey output
+hf iclass wrbl --blk 3 -d <XOR key> --ki X #XOR Key from calcnewkey output will be the new key
+#if blk 4 and 5 are different from source tag, copy block 4 and 5 to destination tag
+hf iclass wrbl --blk 5 -d 1122334455667788 --key 5b7c62c491c11b39 --elite
 ```
 
 
