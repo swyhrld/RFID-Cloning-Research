@@ -17,7 +17,7 @@ hf iclass info
 ---
 
 ### 🔑 Elite vs standard 
-Elite cards usually end at ```Card chip....``` and standard cards usually has extra block 7 decoder information.
+Elite cards usually end at ```Card chip....``` and standard cards usually has extra block 7 decoder information. Commands without --elite would not work elite cards, and vice vera. Take note of the card type.
 - **Elite key output example**:  
   ![Elite iCLASS](./images/eliteiclass.png)
 
