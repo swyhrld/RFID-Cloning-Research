@@ -78,8 +78,15 @@ hf iclass wrbl --blk 5 -d 1122334455667788 --key 5b7c62c491c11b39 --elite
 ### Downgrading elite to standard keys
 
 ```bash
-hf icl chk -f iclass_elite_keys.dic --elite ![chk](./images/chk.png)
-hf iclass calcnewkey --oki 4 --nki 1 --oldelite ![calc](./images/calc.png)
-hf iclass wrbl --blk 3 -d D7DACAD37ACA9DED --ki 4 --elite ![wrbl](./images/wrbl.png)
+hf icl chk -f iclass_elite_keys.dic --elite 
 ```
+![chk](./images/chk.png)
+```bash
+hf iclass calcnewkey --oki 4 --nki 1 --oldelite
+```
+![calc](./images/calc.png)
+```bash
+hf iclass wrbl --blk 3 -d D7DACAD37ACA9DED --ki 4 --elite 
+```
+![wrbl](./images/wrbl.png)
 
