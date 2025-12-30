@@ -66,6 +66,7 @@ hf iclass restore -f <source tag dump file> --first 6 --last 18 --ki 0 #edit dum
 ```
 In most cases, you only need to clone blocks 6 to 9 for the clone to work. 
 
+### Upgrading standard to elite keys
 If copying from elite cards to standard cards, upgrade standard card to elite by writing new key to block 3:
 ```bash
 hf iclass calcnewkey --oki X --nki Y --elite #X = key of destination fob, Y = Key from target fob
@@ -74,5 +75,11 @@ hf iclass wrbl --blk 3 -d <XOR key> --ki X #XOR Key from calcnewkey output will 
 hf iclass wrbl --blk 5 -d 1122334455667788 --key 5b7c62c491c11b39 --elite
 ```
 
+### Downgrading elite to standard keys
 
+```bash
+hf icl chk -f iclass_elite_keys.dic --elite (./images/chk.png)
+hf iclass calcnewkey --oki 4 --nki 1 --oldelite (./images/calc.png)
+hf iclass wrbl --blk 3 -d D7DACAD37ACA9DED --ki 4 --elite (./images/wrbl.png)
+```
 
